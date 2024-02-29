@@ -45,7 +45,7 @@ export default {
     <div class="text">
         <div v-for="linkList in links">
             <ul id="nav-list">
-                <li class="links" v-for="currentLink in linkList.list">
+                <li class="links pointer" v-for="currentLink in linkList.list">
                     {{ currentLink }}
                 </li>
             </ul>
@@ -62,6 +62,36 @@ export default {
 
   <AppFeatures></AppFeatures>
 
+  <div id="footer">
+
+  </div>
+
+  <div id="socials-footer" class="my-display">
+
+    <div>
+        <button class="btn pointer">
+            SIGN-UP NOW!
+        </button>
+    </div>
+
+    <div class="my-display icons-cnt">
+
+        <span class="pointer">
+            FOLLOW US
+        </span>
+
+        <div class="my-display icons-cnt">
+           <img class="pointer" src="C:\VITE\vite-comics\src\assets\footer-facebook.png" alt="Facebook">
+           <img class="pointer" src="C:\VITE\vite-comics\src\assets\footer-twitter.png" alt="X">
+           <img class="pointer" src="C:\VITE\vite-comics\src\assets\footer-youtube.png" alt="Youtube">
+           <img class="pointer" src="C:\VITE\vite-comics\src\assets\footer-pinterest.png" alt="Pinterest">
+           <img class="pointer" src="C:\VITE\vite-comics\src\assets\footer-periscope.png" alt="Periscope">
+        </div>
+
+    </div>
+
+  </div>
+
 </template>
 
 <style>
@@ -70,7 +100,7 @@ export default {
 perchè molto riusabili.*/
 .bar {
     width: 100%;
-    height: 140px;
+    height: 130px;
 }
 
 .my-display {
@@ -85,16 +115,25 @@ perchè molto riusabili.*/
 .links {
     list-style: none;
     border-bottom: 8px solid transparent;
-    margin-top: 54px;
-    padding-bottom: 54px;
+    margin-top: 49px;
+    padding-bottom: 49px;
     &:hover {
         color: #0282f9;
-        cursor: pointer;
         border-bottom: 8px solid #0282f9;
     }
 }
 
+.btn {
+    background-color: transparent;
+    padding: 16px;
+    border: 1px solid #0282f9; 
+}
+
 /*Regole normali.*/
+
+.pointer {
+    cursor: pointer;
+}
 
 #navbar {
     background-color: white;
@@ -110,8 +149,30 @@ perchè molto riusabili.*/
 #empty-bar {
     font-weight: bold;
     width: 100%;
-    height: 160px;
+    height: 150px;
     justify-content: center;
+}
+
+#footer {
+    width: 100%;
+    height: 360px;
+    background-image: url(src/assets/footer-bg.jpg);
+    background-size: cover;
+}
+
+#socials-footer {
+    width: 100%;
+    height: 90px;
+    justify-content: space-around;
+}
+
+.icons-cnt {
+    gap: 20px;
+}
+
+span {
+    color: #0282f9;
+    font-weight: bold;
 }
 
 </style>
