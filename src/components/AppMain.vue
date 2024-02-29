@@ -1,10 +1,13 @@
 <script>
 import AppFeatures from './AppFeatures.vue';
+import AppFooter from './AppFooter.vue';
 
 export default {
     name: 'AppMain',
+    name: 'AppFooter',
     components: {
-    AppFeatures
+    AppFeatures,
+    AppFooter
     },
     name: 'AppMain',
     data() {
@@ -62,7 +65,9 @@ export default {
 
   <AppFeatures></AppFeatures>
 
-  <div id="footer">
+  <div id="footer-cnt">
+
+    <AppFooter></AppFooter>
 
   </div>
 
@@ -117,6 +122,7 @@ perchè molto riusabili.*/
     border-bottom: 8px solid transparent;
     margin-top: 49px;
     padding-bottom: 49px;
+    font-size: 0.9em;
     &:hover {
         color: #0282f9;
         border-bottom: 8px solid #0282f9;
@@ -138,7 +144,7 @@ perchè molto riusabili.*/
 #navbar {
     background-color: white;
     font-weight: bold;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 #nav-list {
@@ -153,9 +159,9 @@ perchè molto riusabili.*/
     justify-content: center;
 }
 
-#footer {
+#footer-cnt {
     width: 100%;
-    height: 360px;
+    height: 381px;
     background-image: url(src/assets/footer-bg.jpg);
     background-size: cover;
 }

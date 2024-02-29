@@ -1,28 +1,64 @@
 <script>
-    export default {
+export default {
     name: 'AppFeatures',
+
+    data() {
+        return {
+            icons: [
+                {
+                    icon: 'src/assets/buy-comics-digital-comics.png',
+                    caption: "DIGITAL COMICS",
+                },{
+                    icon: 'src/assets/buy-comics-merchandise.png',
+                    caption: "DC MERCHANDISE",
+                },{
+                    icon: 'src/assets/buy-comics-subscriptions.png',
+                    caption: "SUBSCRIPTION",
+                },{
+                    icon: 'src/assets/buy-comics-shop-locator.png',
+                    caption: "COMIC SHOP LOCATOR",
+                },{
+                    icon: 'src/assets/buy-dc-power-visa-svg',
+                    caption: "DC POWER VISA",
+                }
+            ]
+        }
+    }
 }
 </script>
 
-<template>
 
+<template>
     <div id="app-features">
-        <div>
-        <!--/*17:01
-        vedete che quelle icone sono composte sia da un’immagine che da un testo (e volendo anche da un link) quindi sarebbe ancora più bello se creaste un array dati adeguato a contenere questi elementi
-        17:02
-        Sarebbe altresì MERAVIGLIOSO se questo array di dati fosse in un file a sé stante nella cartella “data” come per il json delle cards*/-->
+        <div id="dynamic-icons" class="pointer" v-for="icon in icons">
+            <img id="ciao" :src="icon.icon">
+            <p>{{ icon.caption }}</p>
         </div>
     </div>
-  
-
 </template>
+
 
 <style>
 
 #app-features {
-    height: 180px;
+    height: 160px;
+    width: 100%;
     background-color: #0282f9;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 380px;
+    padding-right: 380px;
+
+    #ciao {
+        height: 60px;
+    }
+}
+
+#dynamic-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 </style>
