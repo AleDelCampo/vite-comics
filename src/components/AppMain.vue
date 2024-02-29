@@ -1,6 +1,11 @@
 <script>
+import AppFeatures from './AppFeatures.vue';
 
 export default {
+    name: 'AppMain',
+    components: {
+    AppFeatures
+    },
     name: 'AppMain',
     data() {
         return {
@@ -47,14 +52,21 @@ export default {
         </div>
     </div>
     
-
   </div>
+
+  <div id="empty-bar" class="my-display">
+
+    CONTENUTO VUOTO DA RIEMPIRE DOMANII.
+        
+  </div>
+
+  <AppFeatures></AppFeatures>
 
 </template>
 
 <style>
 
-/*Regole da creare successivamente come variabil SaSS
+/*Regole da creare successivamente come variabili SaSS
 perchè molto riusabili.*/
 .bar {
     width: 100%;
@@ -64,7 +76,6 @@ perchè molto riusabili.*/
 .my-display {
     display: flex;
     align-items: center;
-
 }
 
 .text {
@@ -73,10 +84,14 @@ perchè molto riusabili.*/
 
 .links {
     list-style: none;
-
-    /*&:hover {
-        background-color: #0282f9;
-    }*/
+    border-bottom: 8px solid transparent;
+    margin-top: 54px;
+    padding-bottom: 54px;
+    &:hover {
+        color: #0282f9;
+        cursor: pointer;
+        border-bottom: 8px solid #0282f9;
+    }
 }
 
 /*Regole normali.*/
@@ -90,6 +105,13 @@ perchè molto riusabili.*/
 #nav-list {
     display: flex;
     gap: 20px;
+}
+
+#empty-bar {
+    font-weight: bold;
+    width: 100%;
+    height: 160px;
+    justify-content: center;
 }
 
 </style>
