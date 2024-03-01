@@ -127,7 +127,7 @@ footer {
 
 .links-list:nth-child(2) {
    position: absolute;
-   bottom: 128px;
+   bottom: 48px;
    left: 358px;
 }
 
