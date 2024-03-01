@@ -72,7 +72,7 @@
     </div>
 
     <div id="img-cnt">
-        <img src="C:\VITE\vite-comics\src\assets\dc-logo-bg.png" alt="LOGO">
+        <img src="../assets/dc-logo-bg.png" alt="LOGO">
     </div>
 
 </footer>
