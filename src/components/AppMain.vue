@@ -4,7 +4,7 @@ import AppFooter from './AppFooter.vue';
 import AppComics from './AppComics.vue';
 
 export default {
-    name: 'AppMain',
+    name: 'AppFeatures',
     name: 'AppFooter',
     name: 'AppComics',
     components: {
@@ -131,8 +131,8 @@ perchè molto riusabili.*/
 .links {
     list-style: none;
     border-bottom: 8px solid transparent;
-    margin-top: 49px;
-    padding-bottom: 49px;
+    margin-top: 52px;
+    padding-bottom: 52px;
     font-size: 0.9em;
     &:hover {
         color: #0282f9;
@@ -153,16 +153,32 @@ perchè molto riusabili.*/
 }
 
 #comic-shower {
-    background-color: red;
     width: 70%;
     height: 90%;
 }
 
 #comic-container {
     width: 100%;
-    height: 670px;
+    height: 720px;
     display: flex;
     justify-content: center;
+}
+
+#label {
+    height: 60px;
+    width: 240px;
+    background-color: #0282f9;
+    position: relative;
+    bottom: 30px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+        color: white;
+        font-size: 1.5em;
+    }
 }
 
 #jumbo {

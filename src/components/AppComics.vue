@@ -95,19 +95,51 @@ export default {
 </script>
 
 <template>
-
-    <div>   
-        -> Contenuto
+    <div id="products">   
         
-        <div>
+        <div id="label">
+            <span>CURRENT SERIES</span>
+        </div>
+        
+        <div class="comics-list">
             <ComicItem 
                 v-for="currentComic in comics" 
                 :comicTitle="currentComic.series" 
                 :comicPoster="currentComic.thumb"
             ></ComicItem>
         </div>
+
+        <div>
+        <button id="load-btn" class="pointer">
+            LOAD MORE
+        </button>
+        </div>
+
     </div>
     
 </template>
 
-<style lang="scss"></style>
+<style lang="scss">
+
+#products {
+    
+    background-image: url('/img/fondo-pag-speciali.jpg');
+    background-size: cover;
+    text-align: center;
+    .comics-list {
+        display: flex;
+        flex-flow: row wrap;
+    }
+}
+
+#load-btn {
+    height: 40px;
+    width: 180px;
+    background-color: #0282f9;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+</style>

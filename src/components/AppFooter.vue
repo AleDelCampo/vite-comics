@@ -59,8 +59,8 @@
 <template>
 <footer>
     <div id="links-cnt">
-    <div id="footer-list" class="list-link pointer">
-        <div v-for="linkList in links" class="links-list">
+    <div id="footer-list" class="list-link">
+        <div v-for="linkList in links" class="links-list pointer">
             <h3>{{ linkList.title }}</h3>
             <ul>
                 <li v-for="currentLink in linkList.list">
@@ -110,7 +110,8 @@ footer {
     gap: 60px;
     position: relative;
     bottom: 19px;
-    overflow: hidden; 
+    overflow: hidden;
+    
     .list-link {
         
         h3 {
@@ -128,7 +129,7 @@ footer {
 .links-list:nth-child(2) {
    position: absolute;
    bottom: 48px;
-   left: 358px;
+   left: 352px;
 }
 
 </style>
