@@ -97,11 +97,11 @@ export default {
         </span>
 
         <div class="my-display icons-cnt">
-           <img class="pointer" src="C:\VITE\vite-comics\src\assets\footer-facebook.png" alt="Facebook">
-           <img class="pointer" src="C:\VITE\vite-comics\src\assets\footer-twitter.png" alt="X">
-           <img class="pointer" src="C:\VITE\vite-comics\src\assets\footer-youtube.png" alt="Youtube">
-           <img class="pointer" src="C:\VITE\vite-comics\src\assets\footer-pinterest.png" alt="Pinterest">
-           <img class="pointer" src="C:\VITE\vite-comics\src\assets\footer-periscope.png" alt="Periscope">
+           <img class="pointer" src="../assets/footer-facebook.png" alt="Facebook">
+           <img class="pointer" src="../assets/footer-twitter.png" alt="X">
+           <img class="pointer" src="../assets/footer-youtube.png" alt="Youtube">
+           <img class="pointer" src="../assets/footer-pinterest.png" alt="Pinterest">
+           <img class="pointer" src="../assets/footer-periscope.png" alt="Periscope">
         </div>
 
     </div>
