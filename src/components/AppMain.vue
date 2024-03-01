@@ -59,7 +59,11 @@ export default {
 
   <div id="empty-bar" class="my-display">
 
-    CONTENUTO VUOTO DA RIEMPIRE DOMANII.
+    <div id="jumbo">
+        <img src="C:\VITE\vite-comics\src\assets\jumbotron.jpg" alt="">
+    </div>
+
+    
         
   </div>
 
@@ -142,6 +146,17 @@ perchè molto riusabili.*/
     cursor: pointer;
 }
 
+#jumbo {
+    width: 100%;
+    height: 400px;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+
 #navbar {
     background-color: white;
     font-weight: bold;
@@ -156,7 +171,6 @@ perchè molto riusabili.*/
 #empty-bar {
     font-weight: bold;
     width: 100%;
-    height: 150px;
     justify-content: center;
 }
 
