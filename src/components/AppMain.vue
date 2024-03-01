@@ -111,6 +111,7 @@ perchè molto riusabili.*/
 .my-display {
     display: flex;
     align-items: center;
+    z-index: 99;
 }
 
 .text {

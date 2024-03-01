@@ -18,7 +18,7 @@ export default {
                     icon: 'src/assets/buy-comics-shop-locator.png',
                     caption: "COMIC SHOP LOCATOR",
                 },{
-                    icon: 'src/assets/buy-dc-power-visa-svg',
+                    icon: 'src/assets/buy-dc-power-visa.svg',
                     caption: "DC POWER VISA",
                 }
             ]
@@ -31,7 +31,7 @@ export default {
 <template>
     <div id="app-features">
         <div id="dynamic-icons" class="pointer" v-for="icon in icons">
-            <img id="ciao" :src="icon.icon">
+            <img id="img-size" :src="icon.icon">
             <p>{{ icon.caption }}</p>
         </div>
     </div>
@@ -50,8 +50,16 @@ export default {
     padding-left: 380px;
     padding-right: 380px;
 
-    #ciao {
+    #img-size {
         height: 60px;
+       
+    }
+}
+
+#dynamic-icons:nth-child(5) {
+    img {
+        height: 100%;
+        width: 60px;
     }
 }
 
@@ -61,4 +69,7 @@ export default {
     gap: 20px;
 }
 
+p {
+    font-size: 0.8em;
+}
 </style>

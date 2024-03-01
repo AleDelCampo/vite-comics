@@ -90,8 +90,8 @@
     width: 400px;
     height: 400px;
     position: relative;
-    bottom: 14px;
-    
+    bottom: -10px;  
+    overflow: hidden;
     img {
         width: 100%;
         height: 100%;
@@ -108,6 +108,9 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     gap: 60px;
+    position: relative;
+    bottom: 19px;
+    overflow: hidden; 
     .list-link {
         
         h3 {
