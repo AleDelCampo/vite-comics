@@ -38,7 +38,7 @@ export default {
 </template>
 
 
-<style>
+<style lang="scss">
 
 #app-features {
     height: 160px;

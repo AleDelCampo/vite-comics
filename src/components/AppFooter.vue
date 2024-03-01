@@ -78,7 +78,7 @@
 </footer>
 </template>
 
-<style>
+<style lang="scss">
 
 #footer-list {
     display: flex;

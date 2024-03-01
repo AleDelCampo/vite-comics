@@ -1,13 +1,16 @@
 <script>
 import AppFeatures from './AppFeatures.vue';
 import AppFooter from './AppFooter.vue';
+import AppComics from './AppComics.vue';
 
 export default {
     name: 'AppMain',
     name: 'AppFooter',
+    name: 'AppComics',
     components: {
     AppFeatures,
-    AppFooter
+    AppFooter,
+    AppComics,
     },
     name: 'AppMain',
     data() {
@@ -57,13 +60,17 @@ export default {
     
   </div>
 
-  <div id="empty-bar" class="my-display">
+  <div id="jumbo-bar">
 
     <div id="jumbo">
         <img src="C:\VITE\vite-comics\src\assets\jumbotron.jpg" alt="">
     </div>
 
-    
+    <div id="comic-container">
+        <div id="comic-shower">
+            <AppComics></AppComics>
+        </div>
+    </div>
         
   </div>
 
@@ -72,7 +79,7 @@ export default {
   <div id="footer-cnt">
 
     <AppFooter></AppFooter>
-
+    
   </div>
 
   <div id="socials-footer" class="my-display">
@@ -103,7 +110,7 @@ export default {
 
 </template>
 
-<style>
+<style lang="scss">
 
 /*Regole da creare successivamente come variabili SaSS
 perchè molto riusabili.*/
@@ -115,7 +122,6 @@ perchè molto riusabili.*/
 .my-display {
     display: flex;
     align-items: center;
-    z-index: 99;
 }
 
 .text {
@@ -146,6 +152,19 @@ perchè molto riusabili.*/
     cursor: pointer;
 }
 
+#comic-shower {
+    background-color: red;
+    width: 70%;
+    height: 90%;
+}
+
+#comic-container {
+    width: 100%;
+    height: 670px;
+    display: flex;
+    justify-content: center;
+}
+
 #jumbo {
     width: 100%;
     height: 400px;
@@ -168,7 +187,7 @@ perchè molto riusabili.*/
     gap: 20px;
 }
 
-#empty-bar {
+#jumbo-bar {
     font-weight: bold;
     width: 100%;
     justify-content: center;
